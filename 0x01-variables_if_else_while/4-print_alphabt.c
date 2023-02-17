@@ -15,7 +15,10 @@ int main(void)
 	{
 
 		if (c == 'q' || c == 'e')
+		{
+			c++;
 			continue;
+		}
 
 		putchar(c);
 		c++;
