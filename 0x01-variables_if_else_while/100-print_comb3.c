@@ -15,7 +15,7 @@ int main(void)
 
 		for (m = '1'; m <= '1' + 8; m++)
 		{
-			if(m > n)
+			if (m > n)
 			{
 				putchar(n);
 				putchar(m);
