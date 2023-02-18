@@ -11,19 +11,21 @@ int main(void)
 {
 	char c = '0';
 
-	while (c <= '9')
+	while (c < ('9' + 1))
 	{
 		putchar(c);
+		if (c == '9')
+		{
+			c++;
+			continue;
+		}
 		c++;
-	}
-	c = 'a';
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
+
+		putchar(',');
+		putchar(' ');
 	}
 
-		putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
