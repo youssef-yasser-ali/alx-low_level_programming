@@ -15,13 +15,15 @@ int main(void)
 
 		for (m = '1'; m <= '1' + 8; m++)
 		{
-			putchar(n);
-			putchar(m);
-			if (n == '8' && m == '9')
-				continue;
+			if(m>n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n == '8' && m == '9')
+					continue;
 
-			putchar(',');
-			putchar(' ');
+				putchar(',');
+			}	putchar(' ');
 		}
 	}
 
