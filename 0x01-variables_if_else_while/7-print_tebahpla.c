@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
 * main - Entry point
 *
@@ -10,12 +9,15 @@
 
 int main(void)
 {
-	int n;
+	int c = 'z';
 
-	for (n = 0; n < 10; n++)
-	putchar(n + '0');
+	while (c > 'a')
+	{
+		putchar(c);
+		c--;
+	}
+
 	putchar('\n');
 
 	return (0);
-
 }
