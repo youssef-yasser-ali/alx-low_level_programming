@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "#include <stdio.h>"> $1
+echo "" >>$1
+echo "/**" >> $1
+echo "* main - Entry point" >> $1
+echo "*" >> $1
+echo "* Return: Always 0 (Success)" >> $1
+echo "*/" >> $1
+echo "" >> $1
+chmod u+x $1
+vi $1
