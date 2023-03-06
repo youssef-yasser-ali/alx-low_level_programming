@@ -1,0 +1,11 @@
+#!/bin/bash
+echo '#include "main.h"'> $1
+echo "" >>$1
+echo "/**" >> $1
+echo "* funName - description" >> $1
+echo "*" >> $1
+echo "* Return: description" >> $1
+echo "*/" >> $1
+echo "" >> $1
+chmod u+x $1
+vi $1
